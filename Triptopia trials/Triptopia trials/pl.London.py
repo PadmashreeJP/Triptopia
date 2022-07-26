@@ -1,0 +1,41 @@
+class Node(object):
+    def __init__(self, data):
+        self.data = data
+        self.children = []
+    def add_child(self, obj):
+        self.children.append(obj)
+place = Node("London,UK")
+print(place.data)
+p1= Node("The Buckingham Palace\n\ttimings")
+p2= Node("Coca-Cola London Eye\n\ttimings")
+p3= Node("The Big Ben\n\ttimings")
+p4= Node("THe Shard\n\ttimings")
+p5= Node("Madame Tussauds London\n\ttimings")
+p6= Node("Tower Bridge\n\ttimings")
+p7= Node("The Westminster abbey\n\ttimings")
+p8= Node("Thorpe park\n\ttimings")
+p9= Node("Kew Gardens\n\ttimings")
+p10= Node("National Gallery\n\ttimings")
+p11= Node("Emirates airlines Cable car\n\ttimings")
+p12= Node("Greenwich park\n\ttimings")
+p13= Node("Harry Potter studio tour\n\ttimings")
+p14= Node("Wembley stadium tour\n\ttimings")
+p15= Node("St.Paul's Cathedral\n\ttimings")
+place.add_child(p1)
+place.add_child(p2)
+place.add_child(p3)
+place.add_child(p4)
+place.add_child(p5)
+place.add_child(p6)
+place.add_child(p7)
+place.add_child(p8)
+place.add_child(p9)
+place.add_child(p10)
+place.add_child(p11)
+place.add_child(p12)
+place.add_child(p13)
+place.add_child(p14)
+place.add_child(p15)
+for i in place.children:
+    print (i.data)
+

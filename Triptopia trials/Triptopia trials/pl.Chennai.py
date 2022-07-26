@@ -1,0 +1,41 @@
+class Node(object):
+    def __init__(self, data):
+        self.data = data
+        self.children = []
+    def add_child(self, obj):
+        self.children.append(obj)
+place = Node("Chennai,India")
+print(place.data)
+p1= Node("Marina Beach\n\ttimings")
+p2= Node("Mahabalipuram\n\ttimings")
+p3= Node("Connemara Public Library\n\ttimings")
+p4= Node("Valluvar kottam\n\ttimings")
+p5= Node("Birla planetarium\n\ttimings")
+p6= Node("Kapaleeshwarar temple\n\ttimings")
+p7= Node("Chennai Rail Museum\n\ttimings")
+p8= Node("Guindy National Park\n\ttimings")
+p9= Node("Ripon building\n\ttimings")
+p10= Node("Semmozhi park\n\ttimings")
+p11= Node("VR Chennai\n\ttimings")
+p12= Node("ISKCON Temple Chennai\n\ttimings")
+p13= Node("Vandalur zoo\n\ttimings")
+p14= Node("Elliots Beach\n\ttimings")
+p15= Node("Queensland\n\ttimings")
+place.add_child(p1)
+place.add_child(p2)
+place.add_child(p3)
+place.add_child(p4)
+place.add_child(p5)
+place.add_child(p6)
+place.add_child(p7)
+place.add_child(p8)
+place.add_child(p9)
+place.add_child(p10)
+place.add_child(p11)
+place.add_child(p12)
+place.add_child(p13)
+place.add_child(p14)
+place.add_child(p15)
+for i in place.children:
+    print (i.data)
+
